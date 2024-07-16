@@ -8,7 +8,7 @@ function App() {
 
   useEffect(() => {
     if (canva.current) {
-      let site = new Site({ content: canva.current });
+      const site = new Site({ content: canva.current });
       site.render();
     }
   }, []);
