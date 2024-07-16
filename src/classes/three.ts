@@ -117,7 +117,7 @@ class Site {
   hoverOverLinks() {
     const links = document.querySelectorAll('.links a');
     links.forEach((link, idx) => {
-      link.addEventListener('mouseover', e => {
+      link.addEventListener('mouseover', () => {
         this.material.uniforms.uTimeline.value = 0.0;
         gsap.to(this.material.uniforms.uTimeline, {
           value: 4.0,
